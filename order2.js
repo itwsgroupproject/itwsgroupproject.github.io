@@ -2,7 +2,7 @@ $(document).ready(function() {
   
 $.ajax({
         type: "GET",
-        url: "http://128.113.193.180:8080/LukesDonuts/ProductList?id=3",
+        url: "http://129.161.196.60:8080/LukesDonuts/ProductList?id=3",
       //url: "Luke'sDonuts.json",
         dataType: "json",
         success: function(responseData, status){
@@ -15,18 +15,41 @@ $.ajax({
             output+="<img src=\"http://128.113.193.180:8080/LukesDonuts/"+menuItem.id+".jpg\">"
 
             output+="<h2>"+menuItem.name+"</h2>"
-            output+="<p>Price: " + menuItem.price + "</p>";
+            //output+="<p>Price: " + menuItem.price + "</p>";
             output += "<p>ID: " + menuItem.id + "</p>";
             output += "<p>Name: " + menuItem.name + "</p>";
             output += "<p>Price: " + menuItem.price + "</p>";
+            output += "<div id =\"small\">"
             output += "<p>Timestamp: " + menuItem.timeStamp+"</p><br>";
-            output+="<form>"
-            output+="Full Name:<br>"
-            output+="<input type=\"text\" name=\"fullname\">"
+            output += "</div>"
+            output+="<form action=\"http://129.161.210.100:8080/LukesDonuts/Order\">"
+            output+="<label class=\"field\" for=\"fullName\">"
+            output+= "Full Name:"
+            output+= "</label>"
+            output+="<div class = \"value\">"
+            //output+="Full Name: "
+            output+="<input type=\"text\" name=\"\" id=\"fullName \"value=\"Enter full name\" onfocus=\"value =''\" onblur=\"value='Enter full name'\"/>"
+            output+="</div>"
+            output+="<br>"
+             output+="<label class=\"field\" for=\"quantity\">"
+            output+="Quantity: "
+            output+= "</label>"
+            output+="<div class = \"value\">"
+            output+="<input type=\"text\" name=\"\" id=\"quantity \"value=\"Enter quantity\" onfocus=\"value =''\" onblur=\"value='Enter quantity'\"/>"
+            output+="</div>"
+           // output+="<input type=\"text\" name=\"quantity\">"
+           // output+="<input type=\"hidden\" value=\"menuItem.id\" name=\"id\">"
             output+="<br>"
             output+="<input id =\"submit\" type=\"submit\" value=\"Submit\">"
-            output+="<input type=\"hidden\" value=\"menuItem.id\" name=\"id\">"
+            output+="<input type=\"hidden\" value=" + menuItem.id + " name=\"id\">"
+            output+="<br>"
+            output+="<br>"
+            output+="<br>"
+            output+="<br>"
             output+="</form>"
+            output+="<br>"
+            output+="<br>"
+            output+="<br>"
 
 
 
@@ -50,12 +73,12 @@ $.ajax({
             $(this).next().next().next().toggle(0);
             $(this).next().next().next().next().toggle(0);
             $(this).next().next().next().next().next().toggle(0);
-            $(this).next().next().next().next().next().next().toggle(0);
-            $(this).next().next().next().next().next().next().next().toggle(0);
+            //$(this).next().next().next().next().next().next().toggle(0);
+           // $(this).next().next().next().next().next().next().next().toggle(0);
           });
-          p
+          
           $("#submit").click(function(){
-            alert("The order has been placed");
+            alert("The order has been placed. Please wait for response");
           });
         }
 });

@@ -10,8 +10,11 @@ body{
     text-align: center;
     background-image: url("wood_back.jpg");
     font-family: 'Alegreya SC', serif;
-    cursor:url(donut.png) , auto;
+    /*cursor:url(donut.png) , auto;*/
 
+}
+html{
+   cursor:url(donut.png) , auto;
 }
 
 h1{
@@ -68,6 +71,10 @@ h1{
 .showHideLinks {
   margin-bottom: 1em; 
 }
+.bottom { /*copied from https://stackoverflow.com/questions/2810262/how-to-stick-text-to-the-bottom-of-the-page */
+        position: fixed;
+        bottom: 0;
+      }
 h2{
     display: block;
     float: center;
@@ -251,6 +258,21 @@ h2:hover{
     border-image: url(border.png) 50 50 round;
     
 }
+.small{
+  font-size:10%;
+}
+.value {
+  margin: 0 0 0.5em 0;
+}
+.field {
+  width: 120px;
+  margin: 0 0.5em 0.5em 0;
+}
+.style{
+   font-family: "Arial", Times, serif;
+   font-size:25px;
+}
+
 
 p{
     float: inherit;

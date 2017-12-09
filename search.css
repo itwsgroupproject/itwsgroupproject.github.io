@@ -78,6 +78,13 @@ h1{
       .value {
   margin: 0 0 0.5em 0;
 }
+/*.field {
+  width: 120px;
+  margin: 0 0.5em 0.5em 0;
+  float: left;
+  clear: left;
+  text-align: right;
+}*/
 textarea:focus {
   background-color: #fee;
 }
