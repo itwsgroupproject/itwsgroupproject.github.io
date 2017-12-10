@@ -2,7 +2,7 @@ $(document).ready(function() {
   
 $.ajax({
         type: "GET",
-        url: "http://129.161.196.60:8080/LukesDonuts/ProductList?id=3",
+        url: "http://129.161.137.119:8080/LukesDonuts/ProductList?id=31",
       //url: "Luke'sDonuts.json",
         dataType: "json",
         success: function(responseData, status){
@@ -12,7 +12,7 @@ $.ajax({
            
            
 
-            output+="<img src=\"http://128.113.193.180:8080/LukesDonuts/"+menuItem.id+".jpg\">"
+            output+="<img src=\"//129.161.137.119/LukesDonuts"+menuItem.id+".jpg\">"
 
             output+="<h2>"+menuItem.name+"</h2>"
             //output+="<p>Price: " + menuItem.price + "</p>";
@@ -22,20 +22,20 @@ $.ajax({
             output += "<div id =\"small\">"
             output += "<p>Timestamp: " + menuItem.timeStamp+"</p><br>";
             output += "</div>"
-            output+="<form action=\"http://129.161.210.100:8080/LukesDonuts/Order\">"
+            output+="<form action=\"http://129.161.139.216:8080/LukesDonuts/Order\">"
             output+="<label class=\"field\" for=\"fullName\">"
             output+= "Full Name:"
             output+= "</label>"
             output+="<div class = \"value\">"
             //output+="Full Name: "
-            output+="<input type=\"text\" name=\"\" id=\"fullName \"value=\"Enter full name\" onfocus=\"value =''\" onblur=\"value='Enter full name'\"/>"
+            output+="<input type=\"text\" name=\"fullName\"/>"
             output+="</div>"
             output+="<br>"
              output+="<label class=\"field\" for=\"quantity\">"
             output+="Quantity: "
             output+= "</label>"
             output+="<div class = \"value\">"
-            output+="<input type=\"text\" name=\"\" id=\"quantity \"value=\"Enter quantity\" onfocus=\"value =''\" onblur=\"value='Enter quantity'\"/>"
+            output+="<input type=\"text\" name=\"quantity\"/>"
             output+="</div>"
            // output+="<input type=\"text\" name=\"quantity\">"
            // output+="<input type=\"hidden\" value=\"menuItem.id\" name=\"id\">"
@@ -50,7 +50,6 @@ $.ajax({
             output+="<br>"
             output+="<br>"
             output+="<br>"
-
 
 
 
