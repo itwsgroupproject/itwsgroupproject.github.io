@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:900|Arbutus|Changa+One|Chivo:900|Oleo+Script+Swash+Caps:700');
+
+/*-------------------------Set in Stone-------------------------*/
+
+body{
+    text-align: center;
+    background-image: url("Photos/wood_back.jpg");
+    font-family: 'Alegreya SC', serif;
+    cursor:url(Photos/donut.png) , auto;
+}
+
+.title{
+    font-family: 'Arbutus', cursive;
+    color: red;
+    text-shadow: .01em .09em .01em black;
+    text-outline: black;
+}
+
+/*-------------------------Navigation-------------------------*/
+
+#navigation{
+    margin: auto;
+    align-content: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.nav{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding-right: 50px;
+    width: 100%;
+}
+
+.listprops{
+    display: inline;
+    width: 100px;
+    border: solid;
+    border-color: black;
+    border-radius: .4em;
+    text-align: center;
+    font-size: 1.3em;
+    float: left;
+}
+
+.listprops a{
+    text-decoration: none;
+    color:black;
+}
+
+.listprops:hover{
+    font-size: 1.3em;
+}
+
+.listprops a:hover{
+    color: red;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+
+/*-------------------------Body-------------------------*/
+
+p{
+    float: inherit;
+    text-align: center;
+    font-size: 150%;
+}
+
+#around{
+        margin: 0 auto;
+
+    width: 80%;
+    height: auto;
+}
+
+
+/*-------------------------Js Input-------------------------*/
+
+h2{
+    display: block;
+    float: center;
+    font-size: 100%;
+    margin-bottom: 1em;
+    cursor: pointer;
+
+}
+
+h2:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+#return p{
+    display: block;
+    float: center;
+    font-size: 100%;
+    margin-bottom: 1em;
+    padding-right: 25px;
+}
+/*-------------------------Footer-------------------------*/
+
+#bottom{
+    margin: 0 auto;
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+
+.foot{
+    color: white;
+}
+
+.foot img{
+
+}
